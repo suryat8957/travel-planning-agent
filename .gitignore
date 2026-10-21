@@ -1,0 +1,246 @@
+
+# ==========================================
+# ENVIRONMENT VARIABLES & SECRETS
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+secrets.*
+credentials.json
+service-account*.json
+*-credentials.json
+.token
+.token.*
+tokens.json
+*.secret
+
+# ==========================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+.python-version.local
+
+# ==========================================
+# PYTHON CACHE & BYTECODE
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.egg
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.pyre/
+.dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+junit.xml
+
+# ==========================================
+# PACKAGING & BUILD OUTPUTS
+# ==========================================
+build/
+dist/
+site/
+pip-wheel-metadata/
+wheels/
+share/python-wheels/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# JUPYTER NOTEBOOKS
+# ==========================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+jupyter_cache/
+
+# ==========================================
+# LANGCHAIN / LANGGRAPH / LANGSMITH
+# ==========================================
+.langchain/
+.langgraph_api/
+.langgraph_api/
+.langsmith/
+langsmith/
+langgraph_data/
+checkpoints/
+checkpoint_data/
+*.checkpoint
+*.checkpoints
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Traces, local runs, debug and execution artifacts
+traces/
+runs/
+artifacts/
+debug/
+logs/
+*.log
+*.trace
+*.jsonl
+
+# ==========================================
+# LLM PROVIDER CACHES & LOCAL MODEL DATA
+# ==========================================
+.cache/
+.cache/huggingface/
+.cache/torch/
+.cache/transformers/
+huggingface_cache/
+models/
+*.safetensors
+*.gguf
+*.ggml
+pytorch_model.bin
+
+# ==========================================
+# VECTOR DATABASES & EMBEDDINGS
+# ==========================================
+chroma/
+chroma_db/
+chroma_data/
+.vectorstore/
+vectorstore/
+faiss_index/
+.index/
+qdrant_storage/
+weaviate_data/
+milvus_data/
+lancedb/
+*.faiss
+*.index
+
+# ==========================================
+# DATABASES & LOCAL PERSISTENCE
+# ==========================================
+data/
+local_data/
+storage/
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+*.parquet
+
+# Keep directories when needed using .gitkeep files
+!data/.gitkeep
+!storage/.gitkeep
+
+# ==========================================
+# TESTS & TEST ARTIFACTS
+# ==========================================
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+test-results/
+playwright-report/
+test-results.xml
+
+# ==========================================
+# IDEs & EDITORS
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+.DS_Store
+
+# ==========================================
+# OS GENERATED FILES
+# ==========================================
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ==========================================
+# NODE.JS (IF USING LANGGRAPH STUDIO UI
+# OR A FRONTEND)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.npm/
+.yarn/
+.pnpm-store/
+.next/
+.nuxt/
+.output/
+dist/
+coverage/
+*.tsbuildinfo
+
+# ==========================================
+# DOCKER & LOCAL OVERRIDES
+# ==========================================
+.env.docker
+docker-compose.override.yml
+
+# ==========================================
+# DEPLOYMENT & CLOUD CONFIGURATION
+# ==========================================
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+terraform.tfvars.json
+.serverless/
+.aws-sam/
+.firebase/
+.vercel/
+.netlify/
+.azure/
+.gcloud/
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+
+# ==========================================
+# GENERATED API CLIENTS / DOCUMENTATION
+# ==========================================
+.openapi-generator/
+swagger-codegen/
