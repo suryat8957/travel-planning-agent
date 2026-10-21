@@ -16,12 +16,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 llm = ChatGoogleGenerativeAI(
-    model = "gemini-3.5-flash-lite", 
-    temperature = 0.7
+    model = "gemini-3.5-flash-lite"
 )
 
 class TravelState(TypedDict):
-    message : Annotated[list[AnyMessage],operator.add]
+    messages : Annotated[list[AnyMessage],operator.add]
     user_query : str
     flight_results : str 
     hotel_results : str
