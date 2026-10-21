@@ -1,0 +1,41 @@
+
+# ==========================================
+# LANGCHAIN & LANGGRAPH
+# ==========================================
+langchain
+langgraph
+langchain-community
+
+# ==========================================
+# LLM PROVIDERS
+# ==========================================
+langchain-openai
+langchain-groq
+langchain-google-genai
+
+# ==========================================
+# WEB SEARCH
+# ==========================================
+langchain-tavily
+tavily-python
+
+# ==========================================
+# POSTGRESQL CHECKPOINTING FOR LANGGRAPH
+# ==========================================
+langgraph-checkpoint-postgres
+psycopg[binary,pool]
+
+# ==========================================
+# ENVIRONMENT VARIABLES
+# ==========================================
+python-dotenv
+
+# ==========================================
+# HTTP API REQUESTS (AVIATIONSTACK)
+# ==========================================
+requests
+
+# ==========================================
+# FRONTEND
+# ==========================================
+streamlit
