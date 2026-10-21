@@ -12,7 +12,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 load_dotenv()
 
 AVIATIONSTACK_API_KEY = os.getenv("AVIATIONSTACK_API_KEY")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GEMINI_API_KEY")
 
 if not AVIATIONSTACK_API_KEY:
     raise ValueError("Missing AVIATIONSTACK_API_KEY in your .env file")
